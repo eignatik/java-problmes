@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'space.eignatik'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.google.guava', name: 'guava', version: '11.0.2'
+    testCompile group: 'org.testng', name: 'testng', version: '7.1.0'
+}
+
+test {
+    useTestNG() {
+        useDefaultListeners = true
+    }
+}
