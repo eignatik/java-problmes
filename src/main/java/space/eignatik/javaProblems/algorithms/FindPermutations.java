@@ -16,8 +16,8 @@ import java.util.stream.Collectors;
  * <p>This solution has a smaller algorithm complexity and memory consumption as it works with char
  * arrays  rather than with strings directly.
  *
- * <p>The approximate algorithm complexity is O(m*n) where m is a size of source string and n is a
- * size of the target string.
+ * <p>The approximate algorithm complexity is O(m*(m-n)) in best case, and O(m*n) in the worst
+ * case, where m is a size of source string and n is a size of the target string.
  */
 public final class FindPermutations {
 
